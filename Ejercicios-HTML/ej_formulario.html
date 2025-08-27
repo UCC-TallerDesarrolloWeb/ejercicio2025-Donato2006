@@ -28,32 +28,37 @@
         <leable for="apellido">Apellido:</leable>
         <input type="text" name="apellido" size="40" maxlength="30" placeholder="Ingresa tu apellido" id="apellido">
     </p>
-    <p><leable for="sexo">Sexo:</leable>
-        <input type="radio" name="gender" value="Masculino" checked> Masculino<br>
-        <input type="radio" name="gender" value="Femenino"> Femenino<br>
+  Sexo:
+        <p>
+            <leable from="masculino">Masculino</leable><input type="radio" name="gender" value="Masculino" id="masculino" checked> <br>
+            <leable from="femenino">Femenino</leable><input type="radio" name="gender" value="Femenino" id="femenino"><br>
     </p>
     <p> <leable for="edad">Edad:</leable>
-        <input type="number" name="edad" size="40" placeholder="Ingresa tu edad" ID="edad">
+        <input type="number" name="edad" size="40" placeholder="Ingresa tu edad" id="edad">
     </p>
     </fieldset>
     <fieldset> iformacion cuenta
     <p>
-Email: <input type="email" name="email" size="40" placeholder="Ingresa tu email" maxlength="30">
+        <leable form="email">Email:</leable>
+        <input type="email" name="email" size="40" placeholder="Ingresa tu email" maxlength="30" id="email">
     </p>
     <p>
-Usuario: <input type="text" name="usuario" size="40" placeholder="Ingresa tu usuario" maxlength="30">
+         <lwable form="usuario">Usuario:</lwable>
+        <input type="text" name="usuario" size="40" placeholder="Ingresa tu usuario" maxlength="30" id="usuario">
     </p>
     <p>
-Password: <input type="password" name="password" placeholder="Ingresa tu password" maxlength="30">
+        <leable form="password">Password:</leable>
+        <input type="password" name="password" placeholder="Ingresa tu password" maxlength="30" id="password">
     </p>
     <p>
-Confirmar Password: <input type="password" name="confirmpassword" placeholder="Ingresa tu password" maxlength="30">
+        <leable form="corfirmar">Confirmar Password:</leable>
+        <input type="password" name="confirmpassword" placeholder="Ingresa tu password" maxlength="30" id="confirm">
     </p>
     </fieldset>
     <fieldset>TIPO DE SERVICIO
     <p>
-Tipo de servicio:
-        <select name="tipo_servicio">
+        <leable from="tipo">Tipo de servicio:</leable>
+        <select name="tipo_servicio" id="tipo">
             <option value="free">free</option>
              <option value="standart"> Standard </option>
             <option value="premium">Premium</option>
