@@ -31,7 +31,7 @@
   Sexo:
         <p>
             <leable from="masculino">Masculino</leable><input type="radio" name="gender" value="Masculino" id="masculino" checked> <br>
-            <leable from="femenino">Femenino</leable><input type="radio" name="gender" value="Femenino" id="femenino"><br>
+            <leable from="femenino">Femenino</leable><input type="radio" name="gender" value="Femenino" id="femenino" checked> <br>
     </p>
     <p> <leable for="edad">Edad:</leable>
         <input type="number" name="edad" size="40" placeholder="Ingresa tu edad" id="edad">
@@ -65,24 +65,25 @@
         </select>
     </p>
     <p>
-Tema:
-<input type="checkbox" name="tema" checked>Política
-<input type="checkbox" name="tema" checked>
-Negocios
-<input type="checkbox" name="tema" checked>
-Tecnología
-<input type="checkbox" name="tema" checked>
-Salud
+Tema: <br>
+        <leable from="politica">Política</leable>
+        <input type="checkbox" name="tema" id="politica"checked><br>
+        <leable from="negocios">Negocios</leable>
+        <input type="checkbox" name="tema" id="negocios" checked><br>
+        <leable from="tecnologia">Tecnología</leable>
+        <input type="checkbox" name="tema" id="tecnologia" checked><br>
+        <leable from="salud">Salud</leable>
+        <input type="checkbox" name="tema" id="salud" checked>
+
     </p>
     <p>
-Agregue un comentario:
-       <textarea name="comentario">que opinas?</textarea>
+        <leable from="comentario">Agregue un comentario:</leable>
+       <textarea name="comentario" id="comentario">que opinas?</textarea>
     </p>
-<button type="button">
-Boton de Enviar
-</button>
+        <button type="button">
+            Boton de Enviar
+        </button>
     </fieldset>
 </form>
-
 </body>
 </html>
