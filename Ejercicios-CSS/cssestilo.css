@@ -1,4 +1,4 @@
-<style>
+
 #imagen{
     width: 20%;
     float: left;
@@ -23,6 +23,4 @@ body{
 
 }
 .titulos{
-    text-shadow: 2px 1px lightblue;
-}
-</style>
+    text-shadow: 2px 1px lightblue;}
