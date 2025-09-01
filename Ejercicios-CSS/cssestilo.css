@@ -1,0 +1,28 @@
+<style>
+#imagen{
+    width: 20%;
+    float: left;
+    border-radius: 50%
+}
+div{
+    border: 1px solid black;
+    margin: 20px;
+    padding: 10px;
+    background-color: lightseagreen;
+    border-radius: 15px;
+    box-shadow: 10px 12px #b4c5ff;
+}
+body{
+    text-align: center;
+    .playwrite-mx-guides-regular {
+        font-family: "Playwrite MX Guides", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+    background: linear-gradient(to right, lightblue, white);
+
+}
+.titulos{
+    text-shadow: 2px 1px lightblue;
+}
+</style>
