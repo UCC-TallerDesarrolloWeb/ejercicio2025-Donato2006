@@ -24,3 +24,7 @@ body{
 }
 .titulos{
     text-shadow: 2px 1px lightblue;}
+.pos-fix{
+    position: fixed;
+    top: 0;
+}
