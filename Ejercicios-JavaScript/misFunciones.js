@@ -1,8 +1,8 @@
 /**
- * Descripción
- * @method Nombre de la función
- * @param Parámetro A
- * @param Parámetro B
+ * convierte las unidades por el usuario
+ * @method convertir unidades
+ * @param (string) unidad - inidades ingresadas metros, pie, pulgada, yarda
+ * @param (number) - valor numerico ingresado por el usuario
  * @return Valor que retorna
  */
 
@@ -10,6 +10,9 @@ function calcularvalor(unidad,valor){
     let metro, pie, pulgada, yarda;
     console.log(valor)
     console.log(isNaN(valor))
+    if(valor.includes(",")){
+      valor = valor.replace(",",".")
+    }
     if (isNaN(valor)){
         alert("valor no valido")
         metro = ""
@@ -38,8 +41,29 @@ function calcularvalor(unidad,valor){
         pie=3 * yarda;
         pulgada=36 * yarda;
     }
-    document.getElementById("metro").value = metro;
-    document.getElementById("pulgada").value = pulgada;
-    document.getElementById("yarda").value = yarda;
-    document.getElementById("pie").value = pie;
+    document.getElementById("metro").value = Number(metro).toFixed(2);
+    document.getElementById("pulgada").value = pulgada.round(pulgada*100/100);
+    document.getElementById("pie").value = Math.round(pie*100/100) ;
+    document.getElementById("yarda").value = Number(yarda).toFixed(2);
 }
+let convertiror= (id, valor)=> {
+    let cantidaddegrado, cantidadderadianes;
+    if (id=="grados"){
+        cantidaddegrado=valor;
+        cantidadderadianes = cantidaddegrado* Math.PI/180;
+        Document.getdocumentByID("radianes").value=cantidaddegrado;
+    }else{
+        cantidadderadianes=valor;
+        cantidaddegrado = cantidadderadianes* Math.PI/180;
+        Document.getdocumentByID("grado").value=cantidadderadianes;
+    }
+};
+
+let mostrar_ocultardiv = (id) =>{
+    if (id=="mostrarDiv"){
+        document.getElementsByName("UnDiv")[0].style.display="block";
+    }
+    else{
+        document.getElementsByName("UnDiv")[0].style.display="none";
+    }
+ };
