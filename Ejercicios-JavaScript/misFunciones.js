@@ -28,7 +28,15 @@ function calcularvalor(unidad,valor){
         yarda=0.3333 * pie;
     }else if(unidad=="unid_pulgada"){
         pulgada=valor;
-
+        metro=12 * pulgada;
+        pie=0.0833333 * pulgada;
+        yarda=0.0277778 * pulgada;
+    }
+    else if (unidad=="unid_yarda"){
+        yarda= valor;
+        metro=yarda * 0.9144;
+        pie=3 * yarda;
+        pulgada=36 * yarda;
     }
     document.getElementById("metro").value = metro;
     document.getElementById("pulgada").value = pulgada;
